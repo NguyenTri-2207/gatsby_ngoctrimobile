@@ -1,0 +1,91 @@
+@import '../../styles/colors';
+.search{
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    @media only screen and (max-width : 1024px) {
+        display: block;
+        height: auto;
+        margin: 0 10px;
+        padding-top: 10px;
+        position: relative;
+    }
+    &_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        img{
+            width: 50px;
+            height: 50px;
+            padding-right: 10px;
+        }
+        h1{
+            font-size: 25px;
+            font-weight: 800;
+            color: $main;
+        }
+    }
+    &_form{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        height: 36px;
+        overflow: hidden;
+        @media only screen and (max-width : 1024px) {
+            width: 100%;
+            padding-top: 20px;
+        }
+        &_text{
+            outline: none;
+            height: 30px;
+            width: 80%;
+            padding: 2px 10px;
+            border-radius: 20px;
+            border: 1px solid rgb(114, 105, 105);
+            box-shadow: inset;
+            @media only screen and (max-width : 1024px) {
+                width: 100%;
+            }
+        }
+        &_button{
+            height: 36px;
+            width: 36px;
+            border-radius: 15%;
+            outline: none;
+            border: none;
+            background-color: $main;
+            cursor: pointer;
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon{
+                color: white;
+            }
+        }
+        
+    }
+    &_cart{
+        outline: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: $main;
+        @media only screen and (max-width : 1024px) {
+           position: absolute;
+           top: 10px;
+           right: 0;
+        }
+        .cart{
+        width: 40px;
+        height: 40px;
+        @media only screen and (max-width : 1024px) {
+            width: 20px;
+            height: 20px;
+         }}
+       
+    }
+}
