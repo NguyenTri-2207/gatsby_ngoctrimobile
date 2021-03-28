@@ -1,6 +1,35 @@
 @import '../../styles/colors';
 .menu{
+    margin: 20px 100px;
+    background-color: $main;
+   border-radius: 10px;
+   @media only screen and (max-width : 1024px) {
+    margin: 10px;
+   }
+   @media only screen and (max-width : 768px) {
+    display: none;
+   }
    &_ul{
        display: flex;
+       justify-content: space-between;
+       padding: 10px 20px;
+       margin: 0;
+       li{
+           list-style: none;
+           text-align: center;
+           color: white;
+           cursor: pointer;
+           .icon{
+               list-style: none;
+               color: white;
+               text-decoration: none;
+               font-size: 25px;
+           }
+           p{
+               color: white;
+               margin: 0;
+               padding-top: 10px;
+           }
+       }
    }
 }

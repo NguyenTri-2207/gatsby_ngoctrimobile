@@ -12,6 +12,26 @@
         padding-top: 10px;
         position: relative;
     }
+    &_menuMobile{
+        display: none;
+        @media only screen and (max-width : 1024px) {
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 0;
+            button{
+            background: none;
+            border: none;
+            outline: none;
+           
+            .iconMobile{
+                color: $main;
+                width: 25px;
+                height: 25px;
+            }
+        }
+        }
+    }
     &_logo{
         display: flex;
         align-items: center;

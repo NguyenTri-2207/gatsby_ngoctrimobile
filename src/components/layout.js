@@ -13,6 +13,8 @@ import "./layout.css"
 import NavTop from "./NavTop"
 import Search from "./Search"
 import Menu from "./Menu"
+import Banner from "./Banner"
+import MenuBot from "./MenuBot"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +32,8 @@ const Layout = ({ children }) => {
       <NavTop/>
       <Search/>
       <Menu/>
+      <Banner/>
+      <MenuBot/>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
       >
