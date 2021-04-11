@@ -1,3 +1,27 @@
+.layout_home {
+  .container{
+    padding: 0 100px;
+    @media (max-width: 1920px) {
+      padding: 0 150px;
+    }
+    @media (max-width: 1024px) {
+      padding: 0 50px;
+    }
+    @media (max-width: 768px) {
+      padding: 0 30px;
+    }
+    @media (max-width: 400px) {
+      padding: 0 10px;
+    }
+  }
+  background: #f4f4f4;
+  .bannerBottom{
+    padding: 20px 0;
+  }
+  
+  
+}
+
 /* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -5,20 +29,7 @@
   box-sizing: border-box;
   overflow-y: scroll;
 }
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
+
 article,
 aside,
 details,

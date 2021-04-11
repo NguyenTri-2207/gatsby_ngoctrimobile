@@ -37,8 +37,10 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        border-radius: 50%;
         img{
             width: 50px;
+            border-radius: 50%;
             height: 50px;
             padding-right: 10px;
         }

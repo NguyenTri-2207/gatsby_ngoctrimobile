@@ -1,0 +1,56 @@
+@import '../../styles/colors';
+.Footer{
+    background-color: $main;
+    font-family: Roboto;
+    
+    &_content{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 50px;
+        color: white;
+        @media (max-width:768px) {
+            display: block;
+            padding: 10px 10px;
+        }
+    }
+    &_link-content{
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    line-height: 29px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #ddd;
+                }
+            }
+        }
+    }
+    &_list-logo{
+       
+        li{
+            display: flex;
+            justify-content:center;
+            padding-bottom: 10px;
+            img{
+                padding-left: 10px;
+            }
+        }
+    }
+    &_info{
+        padding: 10px 50px;
+        text-align: center;
+        color: white;
+        p{
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 30px;
+        }
+    }
+}
+ul{
+    padding: 0;
+}
